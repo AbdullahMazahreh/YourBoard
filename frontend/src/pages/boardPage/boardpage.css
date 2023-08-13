@@ -33,3 +33,28 @@
   cursor: pointer;
   z-index: 2;
 }
+
+.chart-toggler {
+  display: flex;
+  gap: 20px;
+  background-color: rgb(233, 233, 233);
+}
+
+.chart-toggler.dark-theme {
+  background-image: conic-gradient(
+    from 90deg at -10% 100%,
+    #2b303b 0deg,
+    #2b303b 90deg,
+    #16181d 1turn
+  );
+}
+
+.chart-toggler div {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chart-toggler.dark-theme div {
+  color: white;
+}

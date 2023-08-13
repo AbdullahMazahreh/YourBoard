@@ -10,6 +10,7 @@ import {
   NewCollectionPopUp,
   TaskDetails,
   UserSettings,
+  ProgressChart,
 } from "../../components/Index";
 import { context } from "../../context/ContextProvider";
 
@@ -25,6 +26,7 @@ function BoardPage() {
   const [displayPopUp, setDisplayPopUp] = useState(false);
   const [displaySideBar, setDisplaySideBar] = useState(true);
   const [displayUserSettings, setDisplayUserSettings] = useState(false);
+  const [displayChart, setDisplayChart] = useState(true);
 
   return (
     <Fragment>
@@ -55,13 +57,25 @@ function BoardPage() {
           <NavBar setDisplayUserSettings={setDisplayUserSettings} />
           <div
             className={
-              isDarkTheme
-                ? "collections-container dark-theme"
-                : "collections-container"
+              isDarkTheme ? "chart-toggler dark-theme" : "chart-toggler"
             }
           >
-            <Collections setDisplayUserSettings={setDisplayUserSettings} />
+            <div onClick={() => setDisplayChart(false)}>Board</div>
+            <div onClick={() => setDisplayChart(true)}>Analytics</div>
           </div>
+          {displayChart ? (
+            <ProgressChart />
+          ) : (
+            <div
+              className={
+                isDarkTheme
+                  ? "collections-container dark-theme"
+                  : "collections-container"
+              }
+            >
+              <Collections setDisplayUserSettings={setDisplayUserSettings} />
+            </div>
+          )}
         </div>
       </div>
       {displayPopUp ? (

@@ -20,6 +20,7 @@ import OneSubTask from "./onesubtask/OneSubTask";
 import Signinform from "./signinform/SigninForm";
 import SigninPage from "../pages/signinpage/SigninPage";
 import UserSettings from "./usetsettings/UserSettings";
+import ProgressChart from "./progresschart/ProgressChart";
 
 export {
   SideBar,
@@ -44,4 +45,5 @@ export {
   Signinform,
   SigninPage,
   UserSettings,
+  ProgressChart,
 };
