@@ -1,0 +1,8 @@
+.one-sub-task-container {
+    display: flex;
+    padding: 15px;
+    background-color: #21212d;
+    gap: 20px;
+    font-size: 18px;
+    color: white;
+}

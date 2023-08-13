@@ -1,0 +1,14 @@
+.newsubtask-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: fit-content;
+}
+
+.newsubtask-container svg {
+  cursor: pointer;
+}
+
+.newsubtask-container svg:hover {
+  scale: 1.1;
+}

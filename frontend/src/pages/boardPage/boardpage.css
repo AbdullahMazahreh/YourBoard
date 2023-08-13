@@ -1,0 +1,35 @@
+.boardpage-container {
+  display: flex;
+  width: 100%;
+}
+
+.boardpage-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.collections-container {
+  background-color: rgb(233, 233, 233);
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+}
+
+.collections-container.dark-theme {
+  background-image: conic-gradient(
+    from 90deg at -10% 100%,
+    #2b303b 0deg,
+    #2b303b 90deg,
+    #16181d 1turn
+  );
+}
+
+.open-sidebar {
+  position: absolute;
+  top: 100px;
+  left: -25px;
+  cursor: pointer;
+  z-index: 2;
+}

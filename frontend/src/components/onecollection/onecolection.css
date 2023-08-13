@@ -1,0 +1,39 @@
+.one-collection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  height: 10vh;
+}
+
+.one-collection-title {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.one-collection-title-color {
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.one-collection-title-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.one-collection-title-name.dark-theme {
+  color: #a0a1a3;
+}
+
+.one-collection-tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,11 @@
+.btn-large {
+  border: none;
+  padding: 13px 25px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
